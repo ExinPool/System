@@ -50,7 +50,7 @@ ACCESS_TOKEN=YOUR_ACCESS_TOKEN
 Add crontab like this in the server.
 
 ``` bash
-# ChainX node process monitor
+# System inode monitor
 * * * * * cd /data/monitor/exinpool/System/inode && bash inode_monitor.sh >> inode_monitor.log &
 ```
 
@@ -58,7 +58,7 @@ The crontab will run every minute then you can check the log in the `inode_monit
 
 ## Features
 
-- Monitor ChainX node process
+- Monitor system inode
 - Send alarm message when inode is abnormal
 - Send alarm message to Mixin Messenger via Webhook
 
