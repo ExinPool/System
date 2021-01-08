@@ -20,7 +20,7 @@ log_file="$(config_get LOG_FILE)"
 webhook_url="$(config_get WEBHOOK_URL)"
 access_token="$(config_get ACCESS_TOKEN)"
 
-if [ ${inode_num} -eq ${inode_num_var} ]
+if [ ${inode_num_var} -gt ${inode_num} ]
 then
     log="`date '+%Y-%m-%d %H:%M:%S'` `hostname` `whoami` INFO ${service} inode num is normal."
     echo $log >> $log_file
