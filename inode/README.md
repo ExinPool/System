@@ -42,6 +42,7 @@ Copy `config.cfg.defaults` to `config.cfg` and change some varibles like this in
 ``` bash
 SERVICE=System
 INODE_NUM=80
+DISK_ARRAY=("/" "/data")
 LOG_FILE=inode_monitor.log
 WEBHOOK_URL=https://webhook.exinwork.com/api/send?access_token
 ACCESS_TOKEN=YOUR_ACCESS_TOKEN
