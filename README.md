@@ -40,7 +40,7 @@ Invite Webhook and somebody who want to receive monitor message to a small group
 Add crontab like this in the server.
 
 ``` bash
-# System CPU monitor
+# System monitor
 * * * * * cd /data/monitor/exinpool/System && bash monitor.sh &
 ```
 
