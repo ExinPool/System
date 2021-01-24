@@ -37,7 +37,15 @@ Invite Webhook and somebody who want to receive monitor message to a small group
 
 > Note: The access token is only available for the owner of the group.
 
-Add crontab like this in the server.
+Update this line in `deploy.sh`.
+
+``` bash
+TOKEN="YOUR_TOKEN_HERE"
+```
+
+Then execute `bash deploy.sh` and make the necessary adjustments.
+
+Finally, add crontab like this in the server.
 
 ``` bash
 # System monitor
