@@ -49,7 +49,7 @@ The crontab will run every minute then you can check the log in the single direc
 ## Features
 
 - Monitor system cpu, disk, mem and inode.
-- Send alarm message when items is abnormal
+- Send alarm message when item is abnormal
 - Send alarm message to Mixin Messenger via Webhook
 
 ## Contributing
