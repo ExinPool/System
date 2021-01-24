@@ -20,10 +20,7 @@ log_file="$(config_get LOG_FILE)"
 webhook_url="$(config_get WEBHOOK_URL)"
 access_token="$(config_get ACCESS_TOKEN)"
 
-echo $cpu_num_var
-echo $cpu_num
-
-if [ ${cpu_num_var} -lt ${cpu_num} ]
+if (( $(echo "$cpu_num_var < $cpu_num" | bc -l) ))
 then
     log="`date '+%Y-%m-%d %H:%M:%S'` `hostname` `whoami` INFO ${service} cpu num is normal."
     echo $log >> $log_file
