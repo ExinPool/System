@@ -20,7 +20,7 @@ log_file="$(config_get LOG_FILE)"
 webhook_url="$(config_get WEBHOOK_URL)"
 access_token="$(config_get ACCESS_TOKEN)"
 
-if [ ${mem_num_var} -lt ${mem_num} ]
+if (( $(echo "${mem_num_var} < ${mem_num}" |bc -l) ))
 then
     log="`date '+%Y-%m-%d %H:%M:%S'` `hostname` `whoami` INFO ${service} mem num is normal."
     echo $log >> $log_file
